@@ -1,0 +1,38 @@
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <a class="sidenav-button"><i class="bi bi-list" aria-hidden="true" (click)="inputSideNav.toggle()"></i></a>
+    <a class="navbar-brand"> Cloud 9 </a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="">
+        <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-auto" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown dropstart">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+                    <div class="photo">
+                        <img alt="Profile Photo" src="./../../assets/images/user.png">
+                    </div>
+                    Mohd Amir Ahmad
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" > Profile </a>
+                    <a class="dropdown-item" > Logout </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
+            (click)="inputSideNav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span style="margin-left: 10px;">My App</span>
+        <span class="example-spacer"></span>
+        <button mat-button [matMenuTriggerFor]="menu"><i class="bi bi-person-circle"></i>Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </mat-toolbar-row>
