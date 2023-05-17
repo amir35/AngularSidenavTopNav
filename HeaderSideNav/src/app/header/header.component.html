@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggled()">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <a class="navbar-brand px-1" href="#"> Header and Side Navbar</a>
+
+    <div class="navbar-collapse">
+
+        <ul class="navbar-nav me-auto">
+
+            <li class="navbar-item dropdown text-light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu 1</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">SubMenu1</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu2</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu3</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-item dropdown text-light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu 2</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">SubMenu1</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu2</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu3</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-item dropdown text-light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu 3</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">SubMenu1</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu2</a></li>
+                    <li><a class="dropdown-item" href="#">SubMenu3</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <form class="d-flex me-2">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+
+    <div class="profile-logo dropstart">
+        <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+            Amir
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+            <li><a class="dropdown-item" href="#">Log In</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">LogOut</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
